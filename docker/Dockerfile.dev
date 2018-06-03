@@ -1,0 +1,15 @@
+FROM node:10-alpine
+LABEL maintainer "cheezenaan <cheezenaan@gmail.com>"
+
+ENV \
+  APP_DIR="/app"
+
+WORKDIR ${APP_DIR}
+
+# Introduce Tini to avoid PID 1 problem
+# ref. http://ngzm.hateblo.jp/entry/2017/08/22/185224
+RUN set -x && \
+  apk add --no-cache tini
+
+ENTRYPOINT ["/sbin/tini", "--"]
+
