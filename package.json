@@ -3,5 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "author": "cheezenaan",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^4.10.2",
+    "webpack-cli": "^3.0.2"
+  },
+  "scripts": {
+    "watch": "webpack --config config/webpack.config.js --watch"
+  }
 }

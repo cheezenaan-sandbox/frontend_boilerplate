@@ -6,6 +6,7 @@ services:
     build:
       context: .
       dockerfile: ./docker/Dockerfile.dev
+    command: yarn watch
     volumes:
       - ./:/app:${CONSISTENCY:-cached}
     ports:
