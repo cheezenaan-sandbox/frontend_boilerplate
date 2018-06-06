@@ -5,7 +5,7 @@ const isProduction = process.env.NODE_ENV === 'production';
 module.exports = {
   mode: process.env.NODE_ENV || 'development',
   entry: {
-    bundle: './src/javascripts/index.ts'
+    bundle: './src/index.ts'
   },
   output: {
     path: path.join(__dirname, '../dist'),
