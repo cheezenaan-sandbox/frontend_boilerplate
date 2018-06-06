@@ -6,8 +6,11 @@ services:
     build:
       context: .
       dockerfile: ./docker/Dockerfile.dev
-    command: yarn watch
+    command: yarn start
+    environment:
+      LOCAL_IP: ${LOCAL_IP:-0.0.0.0}
     volumes:
       - ./:/app:${CONSISTENCY:-cached}
     ports:
-      - 3000:3000
+      - 8080:8080
+      - 8081:8081

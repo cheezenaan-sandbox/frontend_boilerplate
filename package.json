@@ -11,6 +11,7 @@
     "webpack-serve": "^1.0.2"
   },
   "scripts": {
-    "watch": "webpack --config config/webpack.config.js --watch"
+    "start": "webpack-serve --config config/serve.config.js",
+    "build": "webpack --config config/webpack.config.js"
   }
 }

@@ -1,10 +1,10 @@
 # Frontend boilerplate
 
 * Node.js(w/ yarn)
-* Alpine
+* webpack
 
 ## Usage
 
 ```bash
-docker-compose run --rm node yarn init
+docker-compose up
 ```
