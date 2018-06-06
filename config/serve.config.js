@@ -8,8 +8,8 @@ module.exports = {
     hot: {
       host: {
         server: '0.0.0.0',
-        client: process.env.LOCAL_IP || '0.0.0.0'
-      }
-    }
-  }
+        client: process.env.LOCAL_IP || '0.0.0.0',
+      },
+    },
+  },
 };

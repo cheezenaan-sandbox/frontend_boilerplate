@@ -5,22 +5,22 @@ const isProduction = process.env.NODE_ENV === 'production';
 module.exports = {
   mode: process.env.NODE_ENV || 'development',
   entry: {
-    bundle: './src/index.ts'
+    bundle: './src/index.ts',
   },
   output: {
     path: path.join(__dirname, '../dist'),
-    filename: '[name].js'
+    filename: '[name].js',
   },
   resolve: {
-    extensions: ['.ts', '.js']
+    extensions: ['.ts', '.js'],
   },
   module: {
-    rules: [{ test: /.ts$/, loader: 'ts-loader' }]
+    rules: [{ test: /.ts$/, loader: 'ts-loader' }],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.join(__dirname, '../src/index.html')
-    })
+      template: path.join(__dirname, '../src/index.html'),
+    }),
   ],
-  devtool: isProduction ? 'eval' : 'cheap-module-source-map'
+  devtool: isProduction ? 'eval' : 'cheap-module-source-map',
 };
