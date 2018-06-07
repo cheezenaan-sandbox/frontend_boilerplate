@@ -22,6 +22,7 @@
   },
   "scripts": {
     "start": "webpack-serve --config config/serve.config.js",
-    "build": "webpack --config config/webpack.config.js"
+    "build": "webpack --config config/webpack.config.js",
+    "lint": "eslint --ext js,ts"
   }
 }
