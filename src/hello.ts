@@ -1,5 +1,3 @@
-const hello = (message: string): void => {
+export const hello = (message: string): void => {
   console.log(`Hello!! ${message}`);
 };
-
-export { hello as default };

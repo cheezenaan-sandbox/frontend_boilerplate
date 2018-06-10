@@ -4,6 +4,12 @@
   "main": "index.js",
   "author": "cheezenaan",
   "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "webpack-serve --config config/serve.config.js",
+    "build": "webpack --config config/webpack.config.js",
+    "lint": "eslint --ext js,ts"
+  },
   "devDependencies": {
     "eslint": "^4.19.1",
     "eslint-config-airbnb-base": "^12.1.0",
@@ -19,10 +25,6 @@
     "webpack": "^4.10.2",
     "webpack-cli": "^3.0.2",
     "webpack-serve": "^1.0.2"
-  },
-  "scripts": {
-    "start": "webpack-serve --config config/serve.config.js",
-    "build": "webpack --config config/webpack.config.js",
-    "lint": "eslint --ext js,ts"
   }
+
 }
